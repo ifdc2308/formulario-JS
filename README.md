@@ -1,2 +1,2 @@
 # formulario-JS
-Exercicio - criando um formulario em HTML, estilizando com bootstrap e salvano em LocalStorage com Javascript
+Exercício - criando um formulário em HTML, estilizando com bootstrap e CSS e salvando em LocalStorage com Javascript.
