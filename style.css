@@ -1,0 +1,33 @@
+/* Ajustes no estilo para tornar os campos mais harmoniosos */
+label {
+    margin-right: 10px;
+ }
+ #v {
+    margin-right: 10px;
+    width: 200px;
+    height: 40px;
+ }
+ .btn {
+    margin-right: 10px;
+    height: 40px;
+    background-color: #007bff;
+    border-color: #007bff;
+ }
+ .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+ }
+ #d {
+    width: 500px;
+    height: 200px;
+    border: 1px dashed black;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+ }
+ .container {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+ }
+ 
