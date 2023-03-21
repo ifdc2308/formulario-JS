@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>JavaScript Array</title>
+      <title>Formulário com salvamento no LocalStorage</title>
       <!-- Adicionando o Bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,16 +16,30 @@
          #v {
             margin-right: 10px;
             width: 200px;
+            height: 40px;
          }
          .btn {
             margin-right: 10px;
+            height: 40px;
+            background-color: #007bff;
+            border-color: #007bff;
+         }
+         .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
          }
          #d {
             width: 500px;
-            min-height: 100px;
+            height: 200px;
             border: 1px dashed black;
             margin-top: 10px;
             padding: 10px;
+            background-color: white;
+         }
+         .container {
+            background-color: #007bff;
+            padding: 20px;
+            border-radius: 10px;
          }
       </style>
       
@@ -65,15 +79,17 @@
    </head>
    <body>
       <div class="container">
-         <h3>Array com JavaScript</h3>
-         <div class="form-group">
-            <label for="v">Informe valor:</label>
-            <input id="v" class="form-control" />
+         <h3 style="color: white">Formulário com salvamento no LocalStorage</h3>
+         <div style="background-color: white; padding: 20px; border-radius: 10px;">
+            <div class="form-group">
+               <label for="v">Informe o valor:</label>
+               <input id="v" class="form-control" />
+            </div>
+            <button onclick="addItem()" class="btn">Adicionar</button>
+            <button onclick="showItems()" class="btn btn-secondary">Mostrar</button>
+            <button onclick="clearItems()" class="btn btn-danger">Limpar</button>
+            <div id="d"></div>
          </div>
-         <button onclick="addItem()" class="btn btn-primary">Add</button>
-         <button onclick="showItems()" class="btn btn-secondary">Show</button>
-         <button onclick="clearItems()" class="btn btn-danger">Clear</button>
-         <div id="d"></div>
       </div>
    </body>
 </html>
