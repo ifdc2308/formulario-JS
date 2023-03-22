@@ -9,17 +9,36 @@
    </head>
    <body>
       <div class="container">
+            <div class="btn-group">
+               <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Minha conta
+               </button>
+               <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Ver lista completa de tarefas</a>
+               <a class="dropdown-item" href="#">Minhas anotações anteriores</a>
+               <a class="dropdown-item" href="#">Acessar Suporte</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item" href="#">Sair</a>
+               </div>
+            </div>
          <h3 style="color: white">Formulário com salvamento no LocalStorage</h3>
          <div style="background-color: white; padding: 20px; border-radius: 10px;">
             <div class="form-group">
                <label for="v">Informe o valor:</label>
                <input id="v" class="form-control" />
             </div>
-            <button onclick="addItem()" class="btn">Adicionar</button>
-            <button onclick="showItems()" class="btn btn-secondary">Mostrar</button>
-            <button onclick="clearItems()" class="btn btn-danger">Limpar</button>
+               <button onclick="addItem()" class="btn">Adicionar</button>
+               <button onclick="showItems()" class="btn btn-secondary">Mostrar</button>
+               <button onclick="clearItems()" class="btn btn-danger">Limpar</button>
             <div id="d"></div>
          </div>
+            <div class="card border-light mb-3" style="max-width: 18rem;">
+               <div class="card-header">Objetivo do Sistema</div>
+               <div class="card-body">
+               <h5 class="card-title">Olá, Sou a lista de edição no localStorage</h5>
+               <p class="card-text">Meu objetivo no exercicio é ter experiência com manipulação de dados através do JS, no navegador, para edição de conteúdo rápido.</p>
+               </div>
+            <!-- Exemplo de único botão danger -->
       </div>
       <!-- Adicionando o Bootstrap JavaScript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
